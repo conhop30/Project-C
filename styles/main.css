@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Beaufort for LOL - Heavy Italic';
+    src: url('../assets/fonts/beaufort-for-lol/BeaufortforLOL-HeavyItalic.ttf') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+@font-face {
+    font-family: 'Beaufort for LOL - BoldItalic';
+    src: url('../assets/fonts/beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+@font-face {
+    font-family: 'Spiegel Regular';
+    src: url('../assets/fonts/Spiegel\ Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Spiegel Regular', sans-serif;
+    background-color: #0A1428;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: 'Beaufort for LOL - Heavy Italic', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Beaufort for LOL - BoldItalic', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #C8AA67;
+}
