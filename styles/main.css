@@ -23,10 +23,110 @@
     font-style: normal;
 }
 
+#header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; /* Space between header and icons */
+}
+
+nav {
+    text-transform: uppercase;
+    font-family: 'Spiegel Regular', sans-serif;
+}
+
+nav ul {
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 14px;
+}
+
 body {
     font-family: 'Spiegel Regular', sans-serif;
     background-color: #0A1428;
     color: #FFFFFF;
+    padding: 60px;
+}
+
+#champion-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero-image {
+    display: none;
+}
+
+#title, #bio, #classifications {
+    position: relative;
+    z-index: 2;
+}
+
+#abilities-preview {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#preview-window {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#abilities-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#ability-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Right half of the screen */
+}
+
+#ability-video {
+    border: 2px solid #C8AA6E;
+    padding: 20px;
+}
+
+
+.icon img {
+    width: 50px;
+    height: 50px;
 }
 
 h1 {
@@ -45,4 +145,18 @@ h3 {
     text-transform: uppercase;
     font-size: 22px;
     color: #C8AA67;
+}
+
+.name-banner {
+    font-family: 'Spiegel Regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.ability-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
 }
