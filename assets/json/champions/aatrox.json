@@ -1,0 +1,50 @@
+{
+    "aatrox": {
+        "bio": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.",
+        "championTitle": "The Darkin Blade",
+        "championName": "Aatrox",
+        "championImage": "aatrox-hero-image.jpg",
+        "abilities": {
+            "ability1": {
+                "name": "Deathbringer Stance",
+                "description": "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health.",
+                "cost": 0,
+                "icon": "../assets/images/champions/aatrox/deathbringer-stance.webp",
+                "boundKey": "Passive",
+                "video": "../assets/videos/deathbringer-stance.mp4"
+            },
+            "ability2": {
+                "name": "The Darkin Blade",
+                "description": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.",
+                "cost": 0,
+                "icon": "../assets/images/champions/aatrox/the-darkin-blade.webp",
+                "boundKey": "Q",
+                "video": "../assets/videos/the-darkin-blade.mp4"
+            },
+            "ability3": {
+                "name": "Infernal Chains",
+                "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
+                "cost": 0,
+                "icon": "../assets/images/champions/aatrox/infernal-chains.webp",
+                "boundKey": "W",
+                "video": "../assets/videos/infernal-chains.mp4"
+            },
+            "ability4": {
+                "name": "Umbral Dash",
+                "description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
+                "cost": 0,
+                "icon": "../assets/images/champions/aatrox/umbral-dash.webp",
+                "boundKey": "E",
+                "video": "../assets/videos/umbral-dash.mp4"
+            },
+            "ability5": {
+                "name": "World Ender",
+                "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
+                "cost": 0,
+                "icon": "../assets/images/champions/aatrox/world-ender.webp",
+                "boundKey": "R",
+                "video": "../assets/videos/world-ender.mp4"
+            }
+        }
+    }
+}

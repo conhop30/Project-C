@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project C</title>
+    <title>Project C - Home page</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -11,33 +11,18 @@
         <nav>
             <ul>
                 <li><a href="main.html">Home</a></li>
-                <li><a href="#">Create</a></li>
+                <li><a href="../pages/champion.html">Create</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="champion-banner">
-        <div id="hero-image"></div>
-        <div id="title"></div> <!-- Name and title, ex. "Aatrox the Darkin Blade" -->
-        <div id="bio"></div>
-        <div id="classifications"></div> <!-- Champion Role and Difficulty -->
-    </section>
-    <section id="abilities-preview">
-        <section id="abilities-nav">
-            <div id="header"></div>
-            <section id="icon-name-container">
-                <div class="icon"></div>
-                <div class="name-banner"></div>
-            </section>
-        </section>
-        <section id="ability-display">
-            <div id="preview-window"></div>
-            <div id="name-focused"></div>
-            <div id="bound-slot"></div>
-            <div id="description"></div>
-        </section>
-    </section>
+    <label for="champion-select">Choose a champion:</label>
+    <select id="champion-select">
+        <option value="">Select a champion</option>
+        <option value="aatrox">Aatrox</option>
+        <option value="akali">Akali</option>
+    </select>
     
     <footer>
         <p>Project C</p>
