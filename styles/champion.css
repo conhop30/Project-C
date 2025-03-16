@@ -27,11 +27,16 @@
     width: 100%;
     text-align: center;
     margin-bottom: 10px; /* Space between header and icons */
-}
+} 
 
 nav {
-    text-transform: uppercase;
-    font-family: 'Spiegel Regular', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #111;
+    z-index: 1000; /* Ensures it's above other content */
 }
 
 nav ul {
@@ -53,9 +58,15 @@ nav a {
 
 body {
     font-family: 'Spiegel Regular', sans-serif;
-    background-color: #0A1428;
+    background-color: #161F32;
     color: #FFFFFF;
     padding: 60px;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -64,26 +75,63 @@ body {
     height: 50px;
 }
 
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 #champion-banner {
     position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    max-height: 800px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 #hero-image {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh; /* Full screen height */
+    max-height: 800px;
+    object-fit: cover;
+    object-position: top center; /* Focuses more on the upper part instead of the center */
+}
+
+#champion-text-container {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.3);
+
+    /* Softer blurred glow effect around the box */
+    box-shadow: 0 0 25px 30px rgba(0, 0, 0, 0.3);
+    
+    border-radius: 10px;
 }
 
 #title, #bio, #classifications {
-    position: relative;
-    z-index: 2;
+    margin: 0;
+    padding: 5px 0;
 }
 
 #abilities-preview {
+    background-color: #0A1428;
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 #icon-name-container {
@@ -110,7 +158,7 @@ body {
 
 #abilities-buttons-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: center;
 }
 
@@ -145,6 +193,12 @@ h3 {
     font-size: 16px;
 }
 
+#ability-spotlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .ability-wrapper {
     display: flex;
     flex-direction: column;
@@ -161,6 +215,43 @@ h3 {
 .ability-wrapper h5 {
     font-family: 'Spiegel Regular', sans-serif;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 10px;
     color: #FFFFFF;
+}
+
+.spotlight-wrapper {
+    text-align: center;
+    max-width: 70%; /* Prevents it from being wider than the video */
+    word-wrap: break-word;
+}
+
+.spotlight-wrapper h3 {
+    font-family: 'Beaufort for LOL - BoldItalic', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #F9F9F9;
+}
+
+.spotlight-wrapper h4 {
+    font-family: 'Spiegel Regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #879999;
+}
+
+.spotlight-wrapper h3,
+.spotlight-wrapper h4,
+.spotlight-wrapper p {
+    max-width: 100%; /* Ensures text does not exceed container */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1920px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    #champion-banner {
+        max-width: 100%;
+    }
 }
