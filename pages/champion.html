@@ -14,16 +14,16 @@
                 <li><a href="#">Create</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
+                <label for="champion-select">Choose a champion:</label>
+                <select id="champion-select">
+                    <option value="">Select a champion</option>
+                    <option value="aatrox">Aatrox</option>
+                    <option value="akali">Akali</option>
+                </select>
             </ul>
         </nav>
     </header>
     <div class="container">
-        <label for="champion-select">Choose a champion:</label>
-        <select id="champion-select">
-            <option value="">Select a champion</option>
-            <option value="aatrox">Aatrox</option>
-            <option value="akali">Akali</option>
-        </select>
         <section id="champion-banner">
         </section>
         <section id="abilities-preview">
@@ -40,6 +40,7 @@
         <p>Project C</p>
         <p>Copyright</p>
     </footer>
-    <script src="../scripts/champion.js"></script>
+    <script src="../scripts/dataLoader.js"></script>
+    <script type="module" src="../scripts/champion.js"></script>
 </body>
 </html>

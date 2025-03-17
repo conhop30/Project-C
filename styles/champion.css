@@ -23,11 +23,36 @@
     font-style: normal;
 }
 
+/*****************************/
+/*****************************/
+/*  STAPLE ELEMENTS SECTION  */
+/*****************************/
+/*****************************/
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 #header {
     width: 100%;
     text-align: center;
     margin-bottom: 10px; /* Space between header and icons */
 } 
+
+body {
+    font-family: 'Spiegel Regular', sans-serif;
+    background-color: #161F32;
+    color: #FFFFFF;
+    padding: 60px;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
 
 nav {
     position: fixed;
@@ -56,30 +81,29 @@ nav a {
     font-size: 14px;
 }
 
-body {
-    font-family: 'Spiegel Regular', sans-serif;
-    background-color: #161F32;
+h1 {
+    font-family: 'Beaufort for LOL - Heavy Italic', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 50px;
     color: #FFFFFF;
-    padding: 60px;
-
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
 }
 
-
-.icon img {
-    width: 50px;
-    height: 50px;
+h3 {
+    font-family: 'Beaufort for LOL - BoldItalic', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #C8AA67;
 }
 
-.container {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-}
+/*****************************/
+/*****************************/
+/*    HERO BANNER SECTION    */
+/*****************************/
+/*****************************/
 
 #champion-banner {
     position: relative;
@@ -126,12 +150,16 @@ body {
     padding: 5px 0;
 }
 
-#abilities-preview {
-    background-color: #0A1428;
-    display: flex;
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
+/*****************************/
+/*****************************/
+/* ABILITY SPOTLIGHT SECTION */
+/*****************************/
+/*****************************/
+
+.name-banner {
+    font-family: 'Spiegel Regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 #icon-name-container {
@@ -143,6 +171,14 @@ body {
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
+}
+
+#abilities-preview {
+    background-color: #0A1428;
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 #abilities-nav-container {
@@ -167,30 +203,6 @@ body {
     padding: 20px;
     width: 70%;
     margin: 50px;
-}
-
-h1 {
-    font-family: 'Beaufort for LOL - Heavy Italic', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 50px;
-    color: #FFFFFF;
-}
-
-h3 {
-    font-family: 'Beaufort for LOL - BoldItalic', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 22px;
-    color: #C8AA67;
-}
-
-.name-banner {
-    font-family: 'Spiegel Regular', sans-serif;
-    text-transform: uppercase;
-    font-size: 16px;
 }
 
 #ability-spotlight {
@@ -245,6 +257,16 @@ h3 {
     max-width: 100%; /* Ensures text does not exceed container */
 }
 
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/*****************************/
+/*****************************/
+/*   MEDIA QUERIES SECTION   */
+/*****************************/
+/*****************************/
 /* Media query for smaller screens */
 @media (max-width: 1920px) {
     .container {
